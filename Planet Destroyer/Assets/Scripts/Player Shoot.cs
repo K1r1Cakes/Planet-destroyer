@@ -22,6 +22,6 @@ public class PlayerShoot : MonoBehaviour
     {
         if (!context.started) return;
 
-        Debug.Log("Shoot");
+        Instantiate(bulletPrefab, transform.position, Quaternion.identity);
     }
 }
