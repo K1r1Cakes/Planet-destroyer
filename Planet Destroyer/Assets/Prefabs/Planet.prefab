@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetHealth: 30
+  bullet: {fileID: 1542029757910697669, guid: 04d3ee5d5ea0dc448b93911b997fd68f, type: 3}
 --- !u!50 &1129169412656911966
 Rigidbody2D:
   serializedVersion: 5

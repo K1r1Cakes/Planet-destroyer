@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
    public float bulletSpeed = 8f;
+  
 
     // Update is called once per frame
     void Update()
@@ -14,8 +15,8 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private void BulletHit()
+    public void BulletHit()
     {
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }
