@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public float timeBetweenSpawnsPlanet;
     public GameObject obstacle;
     public GameObject planet;
+    public float speedMultiplier;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +21,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speedMultiplier += Time.deltaTime * 0.1f;
+        
         Obstacletimer += Time.deltaTime;
         planetTimer += Time.deltaTime;
 

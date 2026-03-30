@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 473891874}
   m_Layer: 0
   m_Name: Game Manager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -759,6 +759,7 @@ MonoBehaviour:
   timeBetweenSpawnsPlanet: 3
   obstacle: {fileID: 2057734656663580613, guid: e646d2d51806cd14284696d811fb1fdb, type: 3}
   planet: {fileID: 4986809169529434732, guid: 04da7337ca0e2454ba334bf44117b56d, type: 3}
+  speedMultiplier: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
