@@ -39,7 +39,7 @@ public class PlanetDamage : MonoBehaviour
             bullet.BulletHit(); 
         }
        
-
+        Invoke(nameof(resetColor), 0.1f);
     }
 
     /*private void OnTriggerExit2D(Collider2D collide)
@@ -51,6 +51,14 @@ public class PlanetDamage : MonoBehaviour
         }
     }*/
 
+    void resetColor()
+    {
+         Color normalColour;
+         if (ColorUtility.TryParseHtmlString("#AFE89B", out normalColour))
+        {
+            sprite.color = normalColour;
+        }
+    }
     private void DestroyPlanet()
     {
         //destroy planet
