@@ -21,5 +21,11 @@ public class Playerhealth : MonoBehaviour
     {
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / 100f;
+
+        if (healthAmount  <= 0)
+        {
+            //EndCondition
+            Debug.Log("Lose");
+        }
     }
 }
