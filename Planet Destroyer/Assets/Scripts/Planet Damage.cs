@@ -24,6 +24,7 @@ public class PlanetDamage : MonoBehaviour
             else
             {
                 DestroyPlanet();
+                ScoreManager.instance.AddPoint();
             }
         }
     }
