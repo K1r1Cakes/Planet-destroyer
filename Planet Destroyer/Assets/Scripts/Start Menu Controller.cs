@@ -18,4 +18,10 @@ public class StartMenuController : MonoBehaviour
     #endif 
     }
     }
+
+    public void onInstruct()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
 }
