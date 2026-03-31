@@ -22,7 +22,7 @@ public class PlanetDamage : MonoBehaviour
 
             sprite.color = Color.red;
             audioSource.Play();
-            if (planetHealth > 1)
+            if (planetHealth > 0)
             {
                 planetHealth = planetHealth - 10;
                 Debug.Log(planetHealth);
