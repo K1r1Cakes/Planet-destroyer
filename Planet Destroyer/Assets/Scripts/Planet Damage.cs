@@ -21,7 +21,7 @@ public class PlanetDamage : MonoBehaviour
             Debug.Log("Triggered");
 
             sprite.color = Color.red;
-
+            audioSource.Play();
             if (planetHealth > 1)
             {
                 planetHealth = planetHealth - 10;
@@ -29,8 +29,7 @@ public class PlanetDamage : MonoBehaviour
             }
             else
             {
-                audioSource.Play();
-                Invoke(nameof(DestroyPlanet), 0.6f);
+                DestroyPlanet();
                 ScoreManager.instance.AddPoint();
             }
         }
