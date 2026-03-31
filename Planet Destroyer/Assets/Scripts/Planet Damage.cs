@@ -4,6 +4,7 @@ public class PlanetDamage : MonoBehaviour
 {
     public float planetHealth;
     private SpriteRenderer sprite;
+    public AudioSource audioSource;
 
 
     void Start()
@@ -28,7 +29,8 @@ public class PlanetDamage : MonoBehaviour
             }
             else
             {
-                DestroyPlanet();
+                audioSource.Play();
+                Invoke(nameof(DestroyPlanet), 0.6f);
                 ScoreManager.instance.AddPoint();
             }
         }

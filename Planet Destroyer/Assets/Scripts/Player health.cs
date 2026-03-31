@@ -7,6 +7,7 @@ public class Playerhealth : MonoBehaviour
     public float healthAmount = 100f;
     public GameObject panel;
     public AudioSource audioSource;
+    public AudioSource loseAudio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,6 +29,7 @@ public class Playerhealth : MonoBehaviour
         if (healthAmount  == 0)
         {
             panel.SetActive(true);
+            loseAudio.Play();
             PauseController.setPause(true);
             Debug.Log("Lose");
         }
