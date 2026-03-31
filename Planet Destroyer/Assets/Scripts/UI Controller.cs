@@ -16,4 +16,10 @@ public class UIController : MonoBehaviour
             UnityEditor.EditorApplication.isPlaying = false;
         #endif 
     }
+
+    public void onReset()
+    {
+        PauseController.setPause(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
