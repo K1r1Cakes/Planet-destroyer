@@ -1047,7 +1047,7 @@ MonoBehaviour:
   planetTimer: 0
   timeBetweenSpawns: 4
   timeBetweenSpawnsPlanet: 3
-  obstacle: {fileID: 2057734656663580613, guid: e646d2d51806cd14284696d811fb1fdb, type: 3}
+  obstacle: {fileID: 9218559966253842565, guid: d60617522fe5da242bd4952f8c673419, type: 3}
   planet: {fileID: 4986809169529434732, guid: 04da7337ca0e2454ba334bf44117b56d, type: 3}
   speedMultiplier: 0
 --- !u!1 &517262383
