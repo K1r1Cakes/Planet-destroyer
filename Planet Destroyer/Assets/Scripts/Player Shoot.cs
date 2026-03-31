@@ -5,6 +5,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform shootPoint;
+    public AudioSource audioSource;
     //shoot form
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,5 +24,6 @@ public class PlayerShoot : MonoBehaviour
         if (!context.started) return;
 
         Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        audioSource.Play();
     }
 }
