@@ -4,6 +4,7 @@ public class StartMenuController : MonoBehaviour
 {
     public void onStartClick()
     {
+        PauseController.setPause(false);
         SceneManager.LoadScene("Main");
     }
 
