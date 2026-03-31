@@ -23,6 +23,11 @@ public class PlayerShoot : MonoBehaviour
     {
         if (!context.started) return;
 
+        if (PauseController.isGamePaused)
+        {
+            return;
+        }
+        
         Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         audioSource.Play();
     }
