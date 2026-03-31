@@ -14,6 +14,11 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseController.isGamePaused)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
        rb.linearVelocity = Vector2.left * (speed + gameManager.speedMultiplier);
     }
 }

@@ -14,6 +14,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseController.isGamePaused)
+        {
+            rb.linearVelocity = Vector2.zero; //Stop movement
+            return;
+        }
         rb.linearVelocity = moveInput * moveSpeed;
     }
 

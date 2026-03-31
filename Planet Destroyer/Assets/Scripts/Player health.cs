@@ -15,10 +15,7 @@ public class Playerhealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (panel.activeSelf)
-        {
-            PauseController.setPause(true);
-        }
+      
     }
 
     public void TakeDamage(float damage)
@@ -26,9 +23,10 @@ public class Playerhealth : MonoBehaviour
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / 100f;
 
-        if (healthAmount  <= 0)
+        if (healthAmount  == 0)
         {
             panel.SetActive(true);
+            PauseController.setPause(true);
             Debug.Log("Lose");
         }
     }

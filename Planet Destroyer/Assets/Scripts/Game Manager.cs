@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseController.isGamePaused)
+        {
+            return;
+        }
         speedMultiplier += Time.deltaTime * 0.1f;
         
         Obstacletimer += Time.deltaTime;
