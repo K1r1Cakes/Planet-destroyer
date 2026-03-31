@@ -6,6 +6,7 @@ public class Playerhealth : MonoBehaviour
     public Image healthBar;
     public float healthAmount = 100f;
     public GameObject panel;
+    public AudioSource audioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +23,7 @@ public class Playerhealth : MonoBehaviour
     {
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / 100f;
+        audioSource.Play();
 
         if (healthAmount  == 0)
         {
